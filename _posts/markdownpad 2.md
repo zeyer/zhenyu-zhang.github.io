@@ -1,7 +1,7 @@
 ---
 layout: post
 title: welcome
-category: home
+category: Think
 ---
 #{{ page.title }}
 ## Welcome to MarkdownPad 2 ##

@@ -1,0 +1,14 @@
+---
+layout: post
+title: Github Pages上的第一篇
+category: home
+---
+
+h1. {{ page.title }}
+
+p(meta). 01 Apr 2013
+
+p. 测试一下我的毅力
+
+
+

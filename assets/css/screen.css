@@ -115,12 +115,12 @@ ul.posts {
 }
 
   .site .title a {
-    color: white;
+    color: #a00;
     text-decoration: none;
   }
 
   .site .title a:hover {
-    color: white;
+    color: black;
     text-decoration: none;
   }
 

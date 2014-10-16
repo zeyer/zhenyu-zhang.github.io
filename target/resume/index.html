@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<title>吴延宇的个人简历网页版</title>
+
+		<meta charset="utf-8" />
+		<meta name="description" content="吴延宇的个人简历" />
+
+		<link rel="stylesheet" media="all" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/rhinoslider.css" />
+
+		<script src="js/modernizr.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+		<script>!window.jQuery && document.write('<script src="/js/jquery.js"><\/script>')</script>
+		<script src="js/parallax.js"></script>
+
+        <!--幻灯片效果-->
+        <script type="text/javascript" src="js/rhinoslider.min.js"></script>
+        <script type="text/javascript" src="js/mousewheel.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#slider').rhinoslider({
+                    effect: 'explode',
+                    effectTime: 800,
+                    showTime: 2000,
+                    easing: 'linear',
+                    autoPlay: true,
+					showControls: 'always',
+					showBullets: 'always'
+                });
+            });
+        </script>
+	</head>
+
+	<body>
+
+		<div id="wrapper">
+			
+			<header id="branding">
+				<h1>吴延宇的个人简历（应聘方向：产品设计师实习生）</h1>
+			</header>
+			
+			<nav id="primary">
+				<ul>
+					<li>
+						<h1>个人信息</h1>
+						<a class="profile" href="#profile">View</a>
+					</li>
+					<li>
+						<h1>项目经历</h1>
+						<a class="project" href="#project">View</a>
+					</li>
+					<li>
+						<h1>校园经历</h1>
+						<a class="school" href="#school">View</a>
+					</li>
+                    <li>
+                        <h1>个人技能</h1>
+                        <a class="skill" href="#skill">View</a>
+                    </li>
+					<li>
+						<h1>一点想法</h1>
+						<a class="about" href="#about">View</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<div id="content">
+				<article id="profile">
+					<header>
+						<h1>个人信息</h1>
+					</header>
+                    <p>姓名：吴延宇</p>
+					<p>武汉大学&nbsp;&nbsp;&nbsp;信息管理与信息系统专业&nbsp;&nbsp;&nbsp;2014年6月毕业</p>
+                    <p>主修课程：信息系统设计&nbsp;&nbsp;信息分析与调查&nbsp;&nbsp;信息组织</p>
+                    <p>计算机相关证书：信息管理工程师（软件等级考试）</p>
+                    <p>邮箱：<a href="mailto:moshuohua@gmail.com">moshuohua@gmail.com</a></p>
+                    <p>电话：13618602346</p>
+					<nav class="next-prev">
+						<!--<hr />-->
+						<a class="next project" href="#project">Next</a>
+					</nav>
+				</article>
+				
+				<article id="project">
+					<header>
+						<h1>项目/实习经历</h1>
+					</header>
+					<p>
+                        <ul id="slider">
+                            <li><img src="img/slider/one.png" alt="" /></li>
+                            <li><img src="img/slider/two.png" alt="" /></li>
+                            <li><img src="img/slider/three.png" alt="" /></li>
+                            <li><img src="img/slider/four.png" alt="" /></li>
+                            <li><img src="img/slider/five.png" alt="" /></li>
+                        </ul>
+                    </p>
+					<nav class="next-prev">
+						<a class="prev profile" href="#profile">Prev</a>
+						<!--<hr />-->
+						<a class="next school" href="#school">Next</a>
+					</nav>
+				</article>
+				
+				<article id="school">
+					<header>
+						<h1>校园经历</h1>
+					</header>
+                    <p>自强网站公关企划部策划（2010）<b>年度新人</b>（2011）优秀部委</p>
+                    <p>校学生会新闻部部委（2011）发表多篇文章</p>
+                    <p>信息管理学院辩论队三辩（2011）院辩论赛<b>全程最佳辩手</b></p>
+                    <p>自强学堂风云学子宣传工作<b>总负责人</b>（2011）负责后勤协调和宣传活动</p>
+                    <p>华中七校联合创业之星大赛二等奖（2011）个人风采奖</p>
+                    <p>武汉市团购市场分析调查实践队长（2011）获优秀实践队长</p>
+					<p><b>国家创新科研团队队长</b>（2012）多种检索模式聊天机器人项目队长</p>
+                    <p>校级暑期实践团队队长（2012）获校级二等奖，院级一等奖</p>
+                    <p>校园电子商务网站构建（2012）负责后台开发</p>
+                    <p>学生技术交流论坛Driftsand开发（2012）负责前台开发</p>
+					<nav class="next-prev">
+						<a class="prev project" href="#project">Prev</a>
+						<!--<hr />-->
+						<a class="next skill" href="#skill">Next</a>
+					</nav>
+				</article>
+
+                <article id="skill">
+                    <header>
+                        <h1>技能简介</h1>
+                    </header>
+                    <p>熟练使用Office办公软件（包括<b>Project和Visio</b>在内）</p>
+                    <p>较熟练使用<b>SPSS进行数据统计分析</b></p>
+                    <p>熟练使用<b>Axure,Balsamiq</b>,Imindmap产品原型设计</p>
+                    <p>较熟练使用Photoshop,Illustrator,Indesign等进行较复杂图形创作和编辑</p>
+                    <p>能够使用<b>Ruby</b>,PHP,Python等语言进行一定程度网站后台开发</p>
+                    <p>较熟练使用Html,<b>CSS</b>,JS等进行简单的前端开发</p>
+                    <br/>
+                    <hr>
+                    <br/>
+                    <p>擅长<b>制作图表和原型设计</b>，崇尚简洁设计</p>
+                    <p>能够进行较深程度的<b>编程开发</b>，可以帮助开发人员进行开发</p>
+                    <p>有一定<b>数据调查分析经验</b>，相信数据的力量，乐于使用<b>数据可视化</b>的方法来呈现各种行为分析</p>
+                    <p>能够进行较为复杂的<b>图形创作和编辑</b>，可进行海报制作和banner设计，参加过多次logo设计比赛</p>
+                    <nav class="next-prev">
+                        <a class="prev school" href="#school">Prev</a>
+                        <!--<hr />-->
+                        <a class="next about" href="#about">Next</a>
+                    </nav>
+                </article>
+				
+				<article id="about">
+					<header>
+						<h1>选择五点我的理由</h1>
+					</header>
+
+                    <p>1. 我不是理想派，但我充满了对互联网产品设计的<b>热情</b>，我认为这是用心工作的源泉</p>
+                    <hr>
+                    <p>2. 我不想空谈，所以我学习<b>编程技术，学习设计与心理学</b>，知识永远是前进的动力</p>
+                    <hr>
+                    <p>3. 我<b>注重团队</b>，热爱学习，乐于与队员分享，我会努力为<b>营造良好的团队氛围</b>做贡献</p>
+                    <hr>
+                    <p>4. 我相信数据，善加利用<b>数据的力量</b>，会让我们为用户提供更加人性化的产品与服务</p>
+                    <hr>
+                    <p>5. 我苛求<b>细节</b>，但偏执是双刃剑，我会学习拿捏力度，<b>多角度看待问题</b>，冷静思考</p>
+                    <hr>
+                    <p>我说完了，我在路上</p>
+
+					<nav class="next-prev">
+						<a class="prev skill" href="#skill">Prev</a>
+						<!--<hr />-->
+					</nav>
+				</article>
+			</div>
+			
+			<!-- Parallax foreground -->
+			<div id="parallax-bg3">
+				<img id="bg3-1" src="img/profile.png"  alt="Montgolfier hot air balloon"/>
+				<img id="bg3-2" src="img/project.png"  alt="Frameless parachute"/>
+				<img id="bg3-3" src="img/orange.png"  alt="Blanchard's air balloon"/>
+                <img id="bg3-4" src="img/skill.png"  alt="Blanchard's air balloon"/>
+                <img id="bg3-5" src="img/arm.png" alt="">
+			</div>
+			
+			<!-- Parallax  midground clouds -->
+			<div id="parallax-bg2">
+				<img id="bg2-1" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-2" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-3" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-4" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-5" src="img/cloud-lg1.png" alt="cloud"/>
+                <img id="bg2-6" src="img/cloud-lg1.png" alt="cloud"/>
+			</div>
+			
+			<!-- Parallax  background clouds -->
+			<div id="parallax-bg1">
+				<img id="bg1-1" src="img/cloud-lg2.png" alt="cloud"/>
+				<img id="bg1-2" src="img/cloud-lg2.png" alt="cloud"/>
+				<img id="bg1-3" src="img/cloud-lg2.png" alt="cloud"/>
+				<img id="bg1-4" src="img/cloud-lg2.png" alt="cloud"/>
+                <img id="bg1-5" src="img/cloud-lg2.png" alt="cloud"/>
+			</div>
+		
+		</div>
+	
+	</body>
+  
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>基于评论的新闻主题观点挖掘模型</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="./css/morris-0.4.3.min.css" rel="stylesheet" >
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/raphael-min.js"></script>
+      <script src="./js/morris-0.4.3.min.js"></script>
+      <script src="./js/miaov.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="#n">内容</a></li>
+          <li><a href="#w">文摘</a></li>
+          <li><a href="#g">关键词</a></li>
+          <li><a href="#q">情感分类</a></li>
+          <li><a href="#z">主要算法</a></li>
+        </ul>
+        <h3 class="text-muted"><strong>新闻观点挖掘（论文实验）</strong></h3>
+      </div>
+
+        <div class="jumbotron" id="n">
+            <h1>内容</h1>
+            <hr>
+            <p class="lead">中央禁令或剥夺公务员超国民待遇 含金量萎缩</p>
+            <p class="lead">新闻原文地址： <a href="http://news.sina.com.cn/c/sd/2014-01-23/001929321374.shtml" target="_blank">点击在新窗口打开</a></p>
+            <p class="lead">网友评论地址： <a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=1-1-29321374" target="_blank">点击在新窗口打开</a></p>
+        </div>
+		
+		<hr>
+
+        <div id="w">
+            <h1 class="left">文摘</h1>
+            <hr>
+            <p class="lead">很多人都认为公务员已是高收入群体</p>
+            <p class="lead">公务员涨工资没有必然联系</p>
+            <p class="lead">20年来铁饭碗金饭碗这一群体备受追捧迄今已有700余万成员分析指出面对这样庞大群体从严整顿吏治过程中完善公务员管理体系</p>
+            <p class="lead">不失之于宽不偏执于严值得深思</p>
+            <p class="lead">与公务员涨工资没有必然联系</p>
+            <p class="lead">2003年中国公务员工资相当于城镇职工平均工资的1.10倍</p>
+        </div>
+
+        <div id="g">
+            <h1 class="left">关键词</h1>
+            <hr>
+                <div id="div1">
+                    <a href="#">辞职</a>
+                    <a href="#">人民</a>
+                    <a href="#">基层</a>
+                    <a href="#">服务</a>
+                    <a href="#">国民待遇</a>
+                    <a href="#">加工资</a>
+                    <a href="#">工人</a>
+                    <a href="#">农民工</a>
+                    <a href="#">收入</a>
+                    <a href="#">百姓</a>
+                    <a href="#">加薪</a>
+                    <a href="#">福利</a>
+                    <a href="#">体制</a>
+                    <a href="#">灰色收入</a>
+                    <a href="#">为什么</a>
+                    <a href="#">待遇</a>
+                    <a href="#">国家</a>
+                    <a href="#">农民</a>
+                    <a href="#">困惑</a>
+                    <a href="#">社会</a>
+					   <a href="#">工作</a>
+					   <a href="#">加薪</a>
+					   <a href="#">腐败</a>
+					</div>
+        </div>
+
+        <div class="row marketing" id="q">
+            <h1 class="left">情感分类</h1>
+            <hr>
+			<div class="col-lg-6">
+				<h4>有效词汇数： 64345个</h4>
+				<p>去除停用词后得到的有效词汇总数</p>
+
+				<h4>评论总数： 3971条</h4>
+				<p>抓取的评论总数，指未经处理后的数目</p>		
+			</div>
+			<div class="col-lg-6">
+				<h4>消极观点评论数： 1604条</h4>
+				<p>阈值设定为评分 小于 0.41</p>
+				
+			    <h4>积极观点评论数： 1951条</h4>
+				<p>阈值设定为评分 大于 0.59</p>
+				
+				<h4>中立观点评论数： 416条</h4>
+				<p>阈值设定为评分 0.41~0.59</p>
+			</div>
+			<hr>        
+        </div>
+		
+		<div>
+			<div id="donut"></div>
+            <script>
+                Morris.Donut({
+                    element: 'donut',
+                    data: [
+                        {label: "消极", value: 0.491312012},
+                        {label: "积极", value: 0.403928481},
+                        {label: "中立", value: 0.104759506}
+                    ],
+                    colors: ["#003366","#CC3333","#CCCCCC"]
+                });
+            </script>
+		</div>
+
+      <div class="row marketing" id="z">
+		<h1 class="left">主要算法</h1>
+		<hr>
+        <div class="col-lg-6">
+          <h4><strong>分词库</strong></h4>
+          <p>采用开源项目较为有名的结巴分词库</p>
+
+          <h4><strong>数据爬虫</strong></h4>
+          <p>python语言，配合BeautifulSoup库</p>
+
+          <h4><strong>文本分类</strong></h4>
+          <p>基于朴素贝叶斯</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4><strong>关键词提取</strong></h4>
+          <p>返回TF/IDF权重最大的关键词</p>
+
+          <h4><strong>文本摘要</strong></h4>
+          <p>基于TextRank算法</p>
+
+          <h4><strong>情感分析</strong></h4>
+          <p>训练了7个类目300万字的新闻评论集</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>以上内容仅为数据实验所用</p>
+      </div>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>

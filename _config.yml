@@ -1,2 +1,4 @@
-markdown: rdiscount
+markdown: redcarpet
 pygments: true
+paginate: 30
+destination: _site/blog

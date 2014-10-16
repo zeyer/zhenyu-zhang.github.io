@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>笔试题第三题</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <link href="assets/css/todc-bootstrap.css" rel="stylesheet">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-toolbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">百度推荐与个性化部笔试答卷(吴延宇)</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+                <li class="">
+                    <a href="http://wuyanyu.com/baidu/second.html">第二题（百度文库为例）</a>
+                </li>
+                <li class="active">
+                    <a href="http://wuyanyu.com/baidu/third.html">第三题（豆瓣为例）</a>
+                </li>
+                <li class="">
+                    <a href="http://wuyanyu.com/resume/index.html">我的简历</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <header class="jumbotron" id="overview">
+      <div class="container">
+          <h1>Douban</h1>
+          <p>豆瓣在中国可以说独树一帜，常常被别人分析来分析去</p>
+          <p>最具有参考价值的就是豆瓣自己极为重视的推荐机制</p>
+          <p>这是豆瓣核心竞争力的原动力，也是内容组织的催化剂</p>
+          <p>下面我就以<strong><u>豆瓣</u></strong>为例，简单阐述一下我的一些个人看法</p>
+      </div>
+  </header>
+  <hr class="soften">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="span12">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#whole"><i class="icon-chevron-right"></i> 总体价值</a></li>
+          <li><a href="#search"><i class="icon-chevron-right"></i> 搜索与推荐</a></li>
+          <li><a href="#gb"><i class="icon-chevron-right"></i> 优缺点分析</a></li>
+          <li><a href="#advice"><i class="icon-chevron-right"></i> 我的建议</a></li>
+          <li><a href="#now"><i class="icon-chevron-right"></i> 对于目前豆瓣推荐的评估</a></li>
+          <li><a href="#mine"><i class="icon-chevron-right"></i> 对于我的改进方案的评估</a></li>
+        </ul>
+      </div>
+      <div class="span8 pull-right">
+
+        <section id="whole">
+          <div class="page-header">
+            <h3>推荐系统在豆瓣中的总体价值</h3>
+          </div>
+
+          <div class="bs-docs-example">
+            <p>真正长期留住用户的，是一个网站的用户价值，而真正的用户价值，是能够为用户带来有用价值的产品；对于豆瓣来说，是能够在大量的用户和数据之中，挖掘相互的联系，从而提供更加丰富和实用的信息，就是实现了其真正的用户用户价值</p>
+            <p>在这样的前提下，豆瓣采取的是“不运营”的方法，内容由用户来发布和修改，在不断增加的用户与内容之间，推荐算法成为了有效组织这一切的关键动力</p>
+            <p>一直以来，豆瓣对推荐系统的研发和改进投入了很大的精力，形成了以“热门推荐”，“新品推荐”，“豆瓣猜你会喜欢”，“喜欢XX的也喜欢”，“产品关联推荐”，“用户关联推荐”等的产品形态</p>
+            <p>从整体来看，便成为以推荐系统为支撑的内容兴趣社区，以用户兴趣和选择为基础，使用推荐和关联匹配来延伸用户与内容的接触面，从而<strong>“猜”出用户所喜欢，“推”出用户应还喜欢</strong>，逐渐将更加符合用户的内容展现出来，营造个性化的产品形态</p>
+          </div>
+        </section>
+
+        <section id="search">
+          <div class="page-header">
+            <h3>豆瓣里搜索与推荐的关系</h3>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">1. 举个例子</a>
+                </li>
+          </ul>
+
+          <div class="bs-docs-example">
+            <p>首先举一个简单的例子，如果在豆瓣的首页搜索“黑镜第二季”得到的集过如下图所示，搜索结果准确度非常低</p>
+            <p><img src="assets/img2/15.png" alt=""></p><hr>
+            <p>如果将“黑镜”和“第二季”中间分开，使用“黑镜 第二季”，那么结果正确，如下图所示</p>
+            <p><img src="assets/img2/16.png" alt=""></p>
+            <p>只是简单的对豆瓣的全站搜索吐槽一下，但是一个推荐算法做的不错，甚至很好的公司，为什么对于搜索却这么“不上心”？</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">2. 分析原因</a>
+                </li>
+          </ul>
+
+          <div class="bs-docs-example">
+            <p>首先不应该说豆瓣对于搜索不上心，推荐系统一直是豆瓣的核心竞争力，这有效地作用于读书，电影推荐等方面，也一直为人津津乐道，但是搜索对于用户来说也同样重要，如何更好的做好推荐，不得不考虑以下搜索对于豆瓣的意义</p>
+            <p><img src="assets/img2/10.png" alt=""><img src="assets/img2/14.png" alt=""></p><hr>
+            <p><strong>从用户行为角度来看</strong>：搜索行为是因为站内的导航无法满足用户的需求，导致用户只好通过搜索来找到内容，在内容非常丰富的前提下，豆瓣的更多精力用于如何帮助用户找到感兴趣的内容，而不是让用户跳过这一切直接搜索内容，换句话说，就是利用良好的推荐算法来帮助用户找到应该找到的内容。但是即使如此，搜索对于一个内容型网站来说，还是非常重要的，我想豆瓣不会一直弱化这一点</p>
+            <p><strong>从产品结构角度来讲</strong>：豆瓣希望每个子产品的独立性更强一些，将子产品的入口的搜索强化，而不是全站搜索，鼓励用户从子产品进行信息使用；如果全站搜索做的非常好，也会降低子产品的独立性，很多用户可能直接进入豆瓣就进行检索，而弱化了推荐系统费尽心思做的内容推荐</p>
+          </div>
+        </section>
+
+        <section id="gb">
+          <div class="page-header">
+            <h3>推荐系统在豆瓣中的应用情况及优缺点评价</h3>
+          </div>
+
+          <div class="bs-docs-example">
+            <p>豆瓣的产品线较长，子产品较多，推荐系统贯穿于整个网站之中，为了快速说明问题，接下来我就主要讲一下<strong>首页推荐</strong>以及<strong>读书，电影，豆瓣FM</strong>三个典型的产品中推荐系统的应用价值，同时对推荐效果做出一些个人的优缺点评价</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">1. 首页豆瓣猜</a>
+                </li>
+          </ul>
+
+          <div class="bs-docs-example">
+            <img src="assets/img2/1.png" alt="">
+            <hr>
+            <h5>概述</h5>
+            <p>新版豆瓣猜：展示的是一部分豆瓣的主页内容,在左侧右上角的“首页设置”中可以进行勾选你感兴趣的类别，主页推荐内容会自动为你推荐<strong>精选热点内容</strong>，包括读书，电影，音乐，阅读，线上活动等，推荐系统会分析用户以及用户群体的操作行为（包括大家标记的想听，想看等等操作因素），进行热点内容的及时推送</p>
+            <hr>
+            <h5>优点</h5>
+            <p>主要是以<strong>浏览发现</strong>和用户在各子产品的操作和行为习惯为主，当然会同时考虑以此为中心的延伸行为和用户关联行为，突出向用户推荐热门的，基于全站各子产品内容精选后的推荐结果，目的是<strong>将流量引向各子产品</strong>，对用户喜好进行进一步数据挖掘，从而提供更加个性化的针对用户的内容</p>
+            <hr>
+            <h5>缺点</h5>
+            <p><strong>没有影评书评等</strong>：这个问题其实是一个<strong>去中心化</strong>的程度衡量问题，用户评论等内容的发散性太大，不利于推荐内容收敛，易产生针对性不强的情况，使推荐结果泛泛而现，但是在豆瓣的发展过程中，以用户为中心而不是以内容为中心的理念也促使豆瓣猜的内容越来越<strong>私人化</strong>，这难免导致一些用户担心过于私人化，而无法发现广泛化的公共热门内容，但是这一点是矛盾所在，也是推荐系统必然产生的矛盾之一</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">1. 豆瓣读书</a>
+                </li>
+          </ul>
+
+          <div class="bs-docs-example">
+            <h5>新书速递</h5>
+            <hr>
+            <p><img src="assets/img2/5.png" alt=""></p>
+            <p>有一些人说读书首页的<strong>新书速递</strong>没有必要，这一点我倒是觉得这个栏目很有必要，虽然一些时候我们是为了了解一本书的评价或者其他信息而在豆瓣读书检索，浏览书评等等，但是这不妨碍系统为我们推荐一些不一定符合我们口味和方向的书籍，如果说这是信息干扰的话，不如说大部分的信息都是信息干扰</p>
+            <p>推荐系统的责任不只是<strong>推荐感兴趣的内容</strong>，同时也起到带领我们<strong>发现未知的有意思的内容</strong>的作用，否则如果只含有推荐兴趣点的部分，而没有广泛化的内容推荐，我们会越来越陷入<strong>中心化壁垒</strong>，在推荐结果中慢慢缩小了我们发现精彩内容的机会</p>
+            <hr>
+            <h5>豆瓣猜（读书）</h5>
+            <hr>
+            <p><img src="assets/img2/6.png" alt=""></p>
+            <p>豆瓣读书的豆瓣猜采用的是标签化管理，豆瓣猜（读书）的准确度较高，通过每天分析<strong>你的读过、想读、在读、评价行为</strong>进行推荐</p>
+            <hr>
+            <h5>精彩豆列</h5>
+            <p><img src="assets/img2/3.png" alt=""></p>
+            <p>豆列推荐有利于用户在相同书目类型下结合其他豆友的总结推荐结果，进行进一步的查阅了解，这样促使了社会化推荐的效果，同时保证了用户产生内容的有效传播，是对推荐内容的有效补充</p>
+            <hr>
+            <h5>优点分析</h5>
+            <p>能够有效利用用户的操作行为（<strong>读过、想读、在读、评价行为</strong>）进行深层次的数据分析，挖掘用户的<strong>阅读喜好和行为趋势</strong>，并且在积累的大量高质量书评信息的同时，在社区化书评氛围中营造了良好的推荐条件，做到自然而然地与电子商务衔接，拓展内容变现和信息引导</p>
+            <p><strong>标签化管理</strong>：方便用户通过标签快速进行信息整合浏览，也方便豆瓣猜的数据收敛，为推荐算法提供更精准的元数据，用户同样可以在豆瓣猜中进行书籍喜好的删除，不断动态调整读书兴趣曲线，帮助系统推荐更加灵活</p>
+
+            <p>同时读书推荐有利于在用户收藏等行为的基础上形成良性循环，帮助用户进行读书计划管理，同时以此为基础进行<strong>发现拓展</strong>，为用户推荐更好的书籍，促进用户UGC的热情，产生更多的书评和笔记，丰富读书内容，从而形成一个良好的读书社区氛围</p>
+            <hr>
+            <h5>缺点分析</h5>
+            <p>新书速递只分为<strong>虚构类</strong>和<strong>非虚构类</strong>两种类别，虽然右侧标明<strong>热门标签</strong>，但是却过分泛化了新书种类；换一种方式表达：新书推荐是应该保留的，但是新书推荐的标签种类选择，应该给用户一些自主选择权，不只是算法推荐的读书关联，同时也允许用户选择关注有可能感兴趣的读书标签，这样具有更多的选择空间</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">2. 豆瓣电影</a>
+                </li>
+          </ul>
+
+          <div class="bs-docs-example">
+            <h5>正在热映（等）</h5>
+            <p><img src="assets/img2/7.png" alt=""></p>
+            <hr>
+            <p>与读书的<strong>新书速递</strong>相同的是为用户提供最新的信息内容，但不同之处还是居多。这一部分推荐的主要是主要以影院档期为主的“固定式”信息推送，目的是让用户能够了解影院档期，以进行影片了解，观影安排等，进而引向电影票的<strong>购买行为</strong></p>
+            <hr>
+            <h5>热门豆列</h5>
+            <p><img src="assets/img2/17.png" alt=""></p>
+            <p>为用户提供其他用户的观影豆列，通过<strong>推荐，收藏</strong>等因素进行推荐，确保推荐豆列的质量，同时为用户提供更多的选择</p>
+            <hr>
+            <h5>集合推荐（排行榜，口碑榜）</h5>
+            <hr>
+            <p><img src="assets/img2/18.png" alt=""></p>
+            <hr>
+            <p>与豆瓣读书不同的是，电影的性质决定排行榜对于用户选择电影有着重要的参考价值，而且观看成本相较于读书来说要低很多，所以用户的转化率很高，提供更多的榜单有助于内容的收敛整合，方便用户及时了解电影排行动态</p>
+            <p>这部分推荐机制主要依据电影评价体系，集合众多豆友的操作（包括推荐，喜欢，收藏，想看，看过等行为等），为用户推荐集众多用户的<strong>实事推荐</strong>，具有更高的参考性和可信赖度</p>
+            <hr>
+            <h5>你可能感兴趣的电影</h5>
+            <hr>
+            <p><img src="assets/img2/19.png" alt=""></p>
+            <p>同样是根据标签管理，在单个推荐电影栏目中，丰富了用户操作，包含了<strong>想看，看过，没兴趣</strong>，可以直接和用户的电影管理连接，提供更加灵活的推荐依据</p>
+            <hr>
+            <h5>协同过滤推荐（喜欢XX的也喜欢）</h5>
+            <p><img src="assets/img2/9.png" alt=""></p>
+            <p>最为典型，也是最为流行和常用的推荐机制，通过找到用户之间的兴趣点联系，基于内容分析信息，综合<strong>相似用户对某一信息的喜好</strong>，预测与推荐更加丰富的信息</p>
+            <hr>
+            <h5>优点</h5>
+            <hr>
+            <p><strong>丰富全面的标签分类</strong>：不仅方便用户进行电影查询和标注，同时依托用户对于电影评价的标签标注，构建推荐系统的有力依据，使电影推荐与用户的喜好更加灵活的匹配，有利于电影和用户的协同过滤，是电影推荐准确的数据保障</p>
+            <p><img src="assets/img2/20.png" alt=""></p>
+            <hr>
+            <p><strong></strong></p>
+            <h5>缺点</h5>
+            <p><strong>“水军”处理机制</strong>：作为很多人看电影的参考依据，但由于商业因素，豆瓣电影不可避免地会被电影水军刷分，发水帖等等，评分的不准确导致推荐电影也会受到一定程度的影响，进一步看，标签错误，极端评分，两极评价等等
+            <p><strong>过滤垃圾信息</strong>：垃圾影评的折叠，剧透评论过滤，水军推荐，刷“想看”，等等。水军等的大量涌入，会对推荐结果造成错误的导向，从而使用户形成“不可信”的感觉，导致用户对推荐结果的满意度降低</p>
+            <p><strong>长尾信息处理问题</strong>：推荐系统关注的更多的应该是用户的兴趣点，推荐内容的范围要足够广泛，注意到大量的长尾内容，而目前好多的电影推荐更多的是热门或者大部分用户喜欢的电影，缺乏对长尾内容的挖掘</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">3. 豆瓣 FM</a>
+                </li>
+          </ul>
+
+          <div class="bs-docs-example">
+            <p><img src="assets/img2/11.png" alt=""></p>
+            <hr>
+            <p>参考自知乎阿北的回答：豆瓣电台的私人电台会综合用户在豆瓣上的各种音乐行为做算法推荐。当然考虑最多的是电台本身的“红心”， “垃圾”，“跳过”这些数据</p>
+            <p>个人在豆瓣FM收听了快近万首音乐，说实话推荐的有时准有时不准，遗憾地说就是不太准，自然对其印象并不是很好，尽管一定使用了很多算法，甚至于“音乐基因工程”等等，但是效果才是最重要的~</p>
+            <hr>
+            <h5>优点</h5>
+            <p><strong>推荐操作简单</strong>；显式和隐式的操作，能够及时反映用户的喜好变化和行为趋势，使用户不断定制与准确化自己的私人电台，使用越多，操作越多，推荐愈加精准，同时也有效解决<strong>短期用户喜好变化</strong>和<strong>长期习惯成长</strong>的问题</p>
+            <<hr>
+            <h5>缺点</h5>
+            <p><strong>曲库偏小</strong>：曲库音乐数量还是偏少，而且中英文的皮里明显倾斜于英文，很多流行音乐都找不到，加上偏文艺的音乐居多，导致想简单地听听流行音乐都不能满足</p>
+            <p><strong>冷启动问题</strong>：用户在最开始使用电台的时候，选择歌手时可选项过少，而后续的播放过程中，起始的选择因素的作用并不明显，例如选择几个中文歌手，推荐的全是英文歌，如何在最开始为用户提供更加准确的起始类型确定，还是可以更完善一些</p>
+          </div>
+
+        </section>
+
+        <section id="advice">
+          <div class="page-header">
+            <h3>针对以上缺点的一些建议</h3>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">1. 首页（新用户冷启动问题）</a>
+                </li>
+          </ul>
+          <div class="bs-docs-example">
+            <p>刚刚注册豆瓣的用户，并没有一个良好的冷启动解决方案，而是希望用户在使用过程中不断进行内容操作，从而提高推荐系统的准确度；但是类似Quora等网站在注册后有一个简单的兴趣，关注要点选择等，可以简单地解决一下初期用户的兴趣方向，在用户的使用中再进行动态的调整。这样的代价是用户需要进行一些额外操作，但是可以确定用户的基础兴趣需求，满足前期的推荐问题</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">2. 读书（添加新书推荐标签定制）</a>
+                </li>
+          </ul>
+          <div class="bs-docs-example">
+            <p>新书速递的书籍过于泛化，虽不是什么大问题，但是用户可能更喜欢关注自己感兴趣的类别的新书，可以为用户提供新书速递的标签定制，用户可以点开读书频道就可以马上看到哪些书籍除了一些新书</p>
+            <p>例如我关注<strong>中信出版社</strong>的书籍，在读书首页定制<strong>我关注的新书</strong>，选择<strong>中信出版社</strong>标签，一旦有新书就会及时显示，如果没有就不显示。这样用户可以最快的了解到自己感兴趣的方面新书</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">3. 电影（加强噪点数据过滤）</a>
+                </li>
+          </ul>
+          <div class="bs-docs-example">
+            <p>类似电影未上映，便出现影评；极端词汇；用户注册时间很短，但却极度追捧一部电影等等特殊情况，在举报机制的基础上，算法方面要对异常用户行为和数据进行有效的过滤，确保尽可能通过算法手段，抑制水军和垃圾信息的产生</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">4. 电台（丰富曲库，标签冷启动）</a>
+                </li>
+          </ul>
+          <div class="bs-docs-example">
+            <p><strong>丰富曲库</strong>：虽然电台的算法较为复杂，但是基于较小的曲库，也难以发挥真正的推荐效果，协调好版权问题，对于曲库填充更多的主流音乐，符合大众口味，降低长尾内容的权重</p>
+            <p><strong>标签冷启动优化</strong>：用户在刚刚使用电台的时候，提供多角度标记兴趣点，例如艺人，歌曲，专辑名称，风格等等，确定用户喜好初期基调，有利于前期的推荐效果，在使用初期减少用户流失</p>
+          </div>
+
+
+        </section>
+
+        <section id="now">
+          <div class="page-header">
+            <h3>评估现有豆瓣推荐系统指标</h3>
+          </div>
+
+          <div class="bs-docs-example">
+            <p>对现有豆瓣推荐系统的衡量指标来说，要考虑巨大的用户基数和内容组织形式，产品形态等多方面因素；评估的方法既要有基于统计数据的数据分析，也要有通过用户调查的具体反馈</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">1. 用户满意度</a>
+                </li>
+          </ul>
+          <div class="bs-docs-example">
+            <p>用户满意度是衡量推荐效果的重要指标，主要可以通过问卷调查或者在线实验获得。</p>
+            <p><strong>问卷调查</strong>：针对豆瓣的不同子产品，进行针对性的问题设计，类似于“你觉得豆瓣FM的私人兆赫推荐效果如何？”，“豆瓣电影的豆列推荐是否满意？”。确保调查样本的范围和数量，做好变量控制</p>
+            <p><strong>数据分析</strong>：我们同样可以根据点击率、用户停留时间和转化率等指标度量用户的满意度</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">2. 预测准确度</a>
+                </li>
+          </ul>
+          <div class="bs-docs-example">
+            <p>这是一个非常重要的<strong>推荐系统离线评测指标</strong>，可以以<strong>用户的历史行为记录</strong>作为实验数据集，将该数据集通过时间分成训练集和测试集。最后，通过在训练集上建立用户的行为和兴趣模型预测用户在测试集上的行为，并计算预测行为和测试集上实际行为的重合度作为预测准确度</p>
+            <p>豆瓣的读书电影等都有评分机制，这就为评分预测奠定了良好的数据基础，根据用户对内容的评分，构建兴趣模型，可以预测其对未评分的内容的行为趋势，从而评估推荐准确度</p>
+            <p>当然，也可以通过用户问卷调查，或者用户访问调查得到更具体的反馈</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">3. 覆盖率</a>
+                </li>
+          </ul>
+          <div class="bs-docs-example">
+            <p>由于豆瓣的内容庞大，存在典型的长尾效应，通过覆盖率可以衡量推荐系统对于内容的推荐广度，在满足推荐内容的用户满意度的基础上，也要考虑覆盖率。具体可以通过<strong>信息熵</strong>和<strong>基尼系数</strong>来计算</p>
+            <p>覆盖率反映出的另一个问题就是内容的<strong>马太效应</strong>，防止在用户基数较大的情况下，热门的内容占据了大量的推荐比例，要通过覆盖率来衡量是否具有良好的平衡效果</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">4. 多样性</a>
+                </li>
+          </ul>
+          <div class="bs-docs-example">
+            <p>书籍，电影，音乐等等的内容数据庞大，如果推荐内容比较多样，覆盖了用户绝大多数的兴趣点，那么就会增加符合用户兴趣内容的概率，自然会相对提高满意度，尽可能达到推荐的效果</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">5. 信赖度</a>
+                </li>
+          </ul>
+          <div class="bs-docs-example">
+            <p>通过问卷调查的方式，询问用户是否信任推荐系统的推荐结果，以此来度量推荐系统的信任度；同样也可以使用线上反馈的方法</p>
+            <p>用户愈加信任推荐系统，就越会增加<strong>用户和推荐系统的交互</strong>，类似评分，贴标签，推荐等等操作，能够让推荐系统更加了解用户的真实需求</p>
+          </div>
+
+        </section>
+
+        <section id="mine">
+          <div class="page-header">
+            <h3>评估模块修改后豆瓣推荐系统指标</h3>
+          </div>
+
+          <div class="bs-docs-example">
+            <p>修改的模块只是少量内容，评估的指标应该侧重于<strong>改进的效果测评</strong>，而不是宏观上的整体测评，所以从以下几个角度进行焦点测评</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">1. 新颖性</a>
+                </li>
+          </ul>
+          <div class="bs-docs-example">
+            <p>新颖度是为用户推荐其并未发觉的热门度不高的内容，从而使用户感到推荐内容具备新鲜感，其衡量标准可以通过热门程度的反比例来计算，热门度越高的内容，新颖度越低</p>
+            <p>但是同时也要考虑用户的满意程度，可以通过调查问卷或者线上反馈问答的方法来进行统计</p>
+            <p>用户在使用豆瓣FM的时候，是希望<strong>与好听的音乐不期而遇</strong>，所以新颖度对于衡量推荐效果具有很大的参考性</p>
+            <p>通过用户刚开始使用的各项兴趣标记，以及丰富的曲库支持，在使用过程中，加上用户的显式和隐式操作，会为用户提供很多好听的“未知”的歌曲</p>
+            <p>同样新书的标签化定制，可以为用户不断提供新书速递，新书的特性满足了新鲜的条件，如果能够有效满足用户的需求，符合标签划定，那么用户满意度也会随之上升</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">2. 惊喜度</a>
+                </li>
+          </ul>
+          <div class="bs-docs-example">
+            <p>惊喜度可以理解为：如果推荐结果和用户的历史兴趣不相似，但却让用户觉得满意，那么就可以说推荐结果的惊喜度很高，这与新颖度的区别在于，推荐的新颖性仅仅取决于用户是否听说过这个推荐结果</p>
+            <p>惊喜度的衡量可以通过定性的度量，首先定义推荐结果和用户历史上喜欢的内容的相似度，其次定义用户对推荐结果的满意度</p>
+            <p>用户满意度可以通过问卷调查或者在线实验获得，推荐结果和用户历史上喜欢的内容相似度，可以用内容相似度定义</p>
+          </div>
+
+          <ul class="nav nav-tabs nav-tabs-google">
+                <li class="active">
+                    <a href="#">3. 信任度</a>
+                </li>
+          </ul>
+          <div class="bs-docs-example">
+            <p>修改的模块存在着很多的不确定性，需要用户参与来反馈数据以确定新的修改是否值得用户信任，使用情况是否良好，是否产生使用价值等等</p>
+            <p>为了确保新模块的信任度的真实性，可以为推荐结果加上,<strong>推荐理由</strong>，提高<strong>推荐的透明度</strong></p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer class="footer">
+      <div class="container">
+          <ul class="footer-links">
+              <li><a href="http://wuyanyu.com">博客</a></li>
+              <li class="muted">&middot;</li>
+              <li><a href="https://github.com/buxiangshuo">Github</a></li>
+              <li class="muted">&middot;</li>
+              <li><a href="http://weibo.com/moshuohua">微博</a></li>
+              <li class="muted">&middot;</li>
+              <li><a href="http://www.douban.com/people/47516504/">豆瓣</a></li>
+          </ul>
+      </div>
+  </footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+    <script src="assets/js/application.js"></script>
+
+  </body>
+</html>

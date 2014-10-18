@@ -5,7 +5,7 @@ category: think
 ---
 {{ page.title }}
 ================
-<p class="meta">2014.10.16</p>
+<p class="meta">2014.10.18</p>
 
 ##现状
 	目前的手机助手

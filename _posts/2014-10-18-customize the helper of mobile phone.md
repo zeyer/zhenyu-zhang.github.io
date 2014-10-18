@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 个性化定制——手机助手的差异化发展
-category: think
+category: idea
 ---
 {{ page.title }}
 ================

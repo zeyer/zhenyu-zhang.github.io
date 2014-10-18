@@ -358,9 +358,9 @@ ul.pages {
   display: block;
 }
 
-/*********************read list style*********************/
+/*********************enjoy list style*********************/
 
-ul.read {
+ul.enjoy {
     float: left;
     padding: 1px;
     width: 625px;
@@ -368,7 +368,7 @@ ul.read {
     list-style-type: none;
 }
 
-    ul.read li {
+    ul.enjoy li {
         float: left;
         width: 110px;
         height: 190px;
@@ -376,7 +376,7 @@ ul.read {
         margin-top: 20px;
     }
 
-    ul.read img {
+    ul.enjoy img {
         margin-top: -37px;
     }
 
